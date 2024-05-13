@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cafe Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="image/logo.png">
+            </div>
+
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#Review">Review</a></li>
+            </ul>
+
+            <div class="icon">
+                <div class="shopping">
+                    <i class='bx bx-shopping-bag'></i>
+                    <span class="quantity">0</span>
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="main">
+
+            <div class="men_text">
+                <h1>Good <span>Coffee</span><br> Great Vibes</h1>
+            </div>
+
+            <div class="main_image">
+                <img src="image/main.jpg">
+            </div>
+
+        </div>
+
+        <p>
+           
+                "Welcome to <span class="highlight">Brewfé </span>, where every corner whispers tales of warmth and community. 
+                Step into our cozy haven, where the aroma of freshly brewed coffee greets you like an old friend.
+                Our space is a sanctuary for those seeking refuge from the bustle of daily life, a place where conversations
+                flow as freely as our espresso. With each sip, you'll taste the dedication and passion we pour into every cup. 
+                Whether you're here for a quick caffeine fix or to linger over a leisurely brunch,
+                we invite you to make yourself at home and experience the simple joys of life, one delicious moment at a time.
+        </p>
+
+        <div class="main_btn">
+       
+            <a href="#Menu" class="about_btn">Order Now</a>
+            <i class="fa-solid fa-angle-right"></i>
+            
+        </div>
+
+    </section>
+
+
+
+    <!--About-->
+
+    <div class="about_main" id="About">
+        <div class="about-content">
+          <h2>About<span class="highlight"> Brewfé  </span></h2>
+          <div class="profile-pic-container">
+            <img src="image/logo.png" alt="Profile Picture" class="profile-pic">
+          </div>
+          <section class="about-me">
+            <h4> "Choose <span class="highlight">Brewfé </span>for an unparalleled coffee experience rooted in passion,
+                quality, and community. Here, every cup tells a story of dedication and craftsmanship, 
+                brewed to perfection just for you. Our commitment to excellence extends beyond our coffee;
+                it's in the way we welcome you with open arms, the atmosphere we cultivate, and the connections we foster. 
+                When you choose us, <span class="highlight">you're choosing more than just a cafe , you're choosing a home away from home</span>, where every visit 
+                is infused with warmth, laughter, and the unmistakable aroma of possibility. Join us,
+                and discover why Brewfé is not just a destination, but a destination worth choosing time and time again."</h4>
+            <div class="wrap">
+              <a href="about.html" class="button">View</a>
+            </div>
+          </section>
+        </div>
+      </div>
+     
+
+
+
+<!--menu-->
+<div class="container" id="Menu">
+    <h1>Menu</h1>
+    <div class="list"></div>
+</div>
+
+<div class="card">
+    <h1>Cart</h1>
+    <div class="card-content">
+        <ul class="listCard"></ul>
+        <div class="checkOut">
+            <span class="total"> Total : 0 </span>
+            
+          
+        </div>
+      
+        <div class="cartForm">
+          
+
+            <form action="checkout.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" placeholder="Enter your address" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact:</label>
+                    <input type="text" id="contact" name="contact" placeholder="Enter your contact number" required>
+                </div>
+                <div class="form-group">
+                </div>
+                    <input type="hidden" name="total" value="">
+                    <input type="hidden" name="items" value="">
+
+                <input type="submit" value="Place Order" class="checkoutButton">
+                <div class="closeShopping">Close</div>
+            </form>
+        </div>
+            
+        </div>
+    </div>
+
+
+    <!--review-->
+
+    <div class="rev-section" id="Review">
+
+        <h2 class="title">Reviews</h2>
+        
+        <div class="reviews">
+        
+        <div class="review">
+           <div class="head-review">
+              <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" width="250px">
+           </div>
+           <div class="body-review">
+              <div class="name-review">Gaspar D.</div>
+              <div class="place-review">Germany</div>
+              <div class="rating">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half"></i>
+              </div>
+              <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+           </div>
+        </div>
+        <div class="review">
+           <div class="head-review">
+              <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" width="250px">
+           </div>
+           <div class="body-review">
+              <div class="name-review">Rusing Will</div>
+              <div class="place-review">Paris</div>
+              <div class="rating">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+              </div>
+              <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+           </div>
+        </div>
+        <div class="review">
+           <div class="head-review">
+              <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" width="250px">
+           </div>
+           <div class="body-review">
+              <div class="name-review">Burnok Tuck</div>
+              <div class="place-review">New York</div>
+              <div class="rating">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half"></i>
+              </div>
+              <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+           </div>
+        </div>
+        
+        </div>
+        
+        </div>
+
+
+    <!--Footer-->
+
+    <footer>
+        <div class="footer_main">
+
+
+            <div class="footer_tag">
+                <h2>Quick Link</h2>
+                <p><a href="#Home">Home</a></p>
+                <p><a href="#Home">About</a></p>
+                <p><a href="#Home">Menu</a></p>
+
+            </div>
+
+            <div class="footer_tag">
+                <h2>Contact</h2>
+                <p>+09 12 3456 789</p>
+                <p>+09 25 5568456</p>
+                <p>bsit@gmail.com</p>
+                <p>atubawmatumbakal@gmail.com</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Our Service</h2>
+                <p>Fast Delivery</p>
+                <p>Easy Payments</p>
+                <p>24 x 7 Service</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Member</h2>
+                <p>Justine Due</p>
+                <p>Nicole Gutierrez</p>
+                <p>John Gamboa 'Owner'</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Professor</h2>
+                <p>Joseph valdez</p>
+                <p>married</p>
+                <p>Web prof</p>
+            </div>
+            
+
+        </div>
+
+      
+
+    </footer>
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>

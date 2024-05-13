@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    min-height: 100vh;
+   color: #ffffff;
+   background: url(https://image.slidesdocs.com/responsive-images/background/coffee-culture-illustration-powerpoint-background_e224109f77__960_540.jpg) center / cover no-repeat rgba(0, 0, 0, 0.5);
+}
+.container {
+  position: relative;
+  width: 320px;
+  margin: 100px auto 0 auto;
+  perspective: 1000px;
+  background: rgba(0, 0, 0, 0.5); /* Added background style */
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; 
+  animation: rotate360 60s infinite forwards linear;
+}
+.carousel__face { 
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.5);
+  display: flex;
+}
+
+span {
+  margin: auto;
+  font-size: 2rem;
+}
+
+.carousel__face:nth-child(1) {
+  background-image: url("https://www.vistaresidences.com.ph/assets/img/top-7-cafe-places-around-katipunan-and-maginhawa-for-study-sessions.png");
+  transform: rotateY(  0deg) translateZ(430px);
+}
+.carousel__face:nth-child(2) { 
+  background-image: url("https://pymstatic.com/30549/conversions/tipos-de-cafe-social.jpg");
+  transform: rotateY( 40deg) translateZ(430px);
+}
+.carousel__face:nth-child(3) {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_ILAI0wA0mSrmPkjQ4d9Wn3gMwbZHanFsoZ22bX684LYt24bvkPKfBqf3E_fvm-R-Q6U&usqp=CAU");
+  transform: rotateY( 80deg) translateZ(430px);
+}
+.carousel__face:nth-child(4) {
+  background-image: url("https://my-test-11.slatic.net/p/a2eb398a7da54ab3df5263c6c7c87b02.jpg");
+  transform: rotateY(120deg) translateZ(430px);
+}
+.carousel__face:nth-child(5) { 
+  background-image: url("https://m.media-amazon.com/images/I/71S2-FkeQdL._AC_UF894,1000_QL80_.jpg");
+  transform: rotateY(160deg) translateZ(430px);
+}
+.carousel__face:nth-child(6) { 
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSir0w5SR2mFuTPc8f04Ng_7naNbE8vf-RnXQy1q0l010j4PbrYRDX20PG0vr4FtsdYD2A&usqp=CAU");
+  transform: rotateY(200deg) translateZ(430px);
+}
+.carousel__face:nth-child(7) { 
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSpkFqjCJJlWK9tNi3jf0-oThodrb8oNGkcPeQy8Ulqw&s");
+  transform: rotateY(240deg) translateZ(430px);
+}
+.carousel__face:nth-child(8) {
+  background-image: url("https://symposiumcafe.com/images/gallery/1635434038-ontario-restaurants-desserts-best-cake-selection.jpg");
+  transform: rotateY(280deg) translateZ(430px);
+}
+.carousel__face:nth-child(9) {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShpMz1naH_7PHZy4UbdNgUepvDg0esHUuGg6OQLCBK6Q&s");
+  transform: rotateY(320deg) translateZ(430px);
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #c18621;
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10%;
+  width: 9%;
+  right: 45%;
+}
+
+.button:hover {
+  background-color: #fac031;
+}
+
+.button:active {
+  background-color: #c18621;
+  transform: translateY(4px);
+}
+
+.highlight {
+  color: rgb(230, 104, 59);
+  animation: highlight 2s ease-in-out infinite alternate;
+  background-color: transparent; /* Remove background color from h1 */
+}
+
+
+@keyframes highlight {
+  0% {
+    color: #7c6235;
+  }
+  50% {
+    color: rgb(230, 104, 59);
+  }
+  100% {
+    color: #7c6235;
+  }
+}
+
+/* Update this style to target only the span inside h1 */
+h1{
+  background-color: transparent; /* Remove background color from h1 */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container" id="Menu">
+            <h1><span class="highlight">Brewfé Gallery </span></h1>
+            <div class="list"></div>
+        </div>
+        <div class="carousel">
+            <div class="carousel__face"><span>This is something</span></div>
+            <div class="carousel__face"><span>Very special</span></div>
+            <div class="carousel__face"><span>Special is the key</span></div>
+            <div class="carousel__face"><span>For you</span></div>
+            <div class="carousel__face"><span>Just give it</span></div>
+            <div class="carousel__face"><span>A try</span></div>
+            <div class="carousel__face"><span>And see</span></div>
+            <div class="carousel__face"><span>How IT Works</span></div>
+            <div class="carousel__face"><span>Woow</span></div>
+        </div>
+    </div>
+    <a href="index.html" class="button">Back to Brewfé </a>
+</body>
+</html>
